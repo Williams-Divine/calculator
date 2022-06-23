@@ -1,4 +1,4 @@
-let operator =  prompt('WELCOME ! Pls enter an operator you want to perform'+ "  "+ "e.g '*','/'  " );
+let operator =  prompt('WELCOME ! Pls enter an operator you want to perform '+ "  "+ "e.g '*', '/', '+' or '-' " );
 let firstNum  = parseInt(prompt("Enter first number"),10);
 let secondNum = parseInt(prompt(firstNum + operator+ " "+"Enter second number"),10);
 
@@ -17,5 +17,7 @@ else if(operator=== "-")
 
 else if(operator=== "/")
     total = firstNum / secondNum;
-    
-alert('Result  of '+firstNum +operator+ secondNum+'='+ total)
+  
+let display = 'Result  of '+firstNum +operator+ secondNum+'='+ total;
+alert(display)
+document.write(display)
